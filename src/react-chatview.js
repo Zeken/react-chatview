@@ -151,11 +151,9 @@ export default class ChatView extends Component {
       <div className={this.props.className} ref={e => { this.scrollable = e; }}
         style={{ overflowX: 'hidden', overflowY: 'auto' }}
       >
-        <div ref={e => { this.smoothScrollingWrapper = e; }}>
-          {this.props.flipped ? loadSpinner : null}
-          {displayables}
-          {this.props.flipped ? null : loadSpinner}
-        </div>
+        {this.props.flipped ? loadSpinner : null}
+        {displayables}
+        {this.props.flipped ? null : loadSpinner}
       </div>
     );
   }
