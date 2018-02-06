@@ -10,3 +10,4 @@ build/
 npm-debug.log
 .coveralls.yml
 *.tgz
+*.sw*
